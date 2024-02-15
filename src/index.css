@@ -3,15 +3,31 @@
 @tailwind utilities;
 
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #111827;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: 'NimbusSanL-Reg';
+  src: url(../src/images/fonts/NimbusSanL-Reg.woff) format('woff');
 }
+
+@font-face {
+  font-family: 'NimbusSanL-Bol';
+  src: url(../src/images/fonts/NimbusSanL-Bol.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'NimbusSanL-BolIta';
+  src: url(../src/images/fonts/NimbusSanL-BolIta.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'NimbusSanL-RegIta';
+  src: url(../src/images/fonts/NimbusSanL-RegIta.woff) format('woff');
+}
+
+.name {
+  font-family: 'NimbusSanL-Reg', sans-serif;
+}
+
+
