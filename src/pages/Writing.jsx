@@ -2,8 +2,17 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Header from "../pages/Header";
 import Footer from "./Footer";
+import { BLOG_TITLE } from '../utils/BlogTitle';
 
 const Writing = () => {
+
+  const fullDate = new Date();
+    const formattedDate = fullDate.toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+    });
+
 
   const [selectedItem, setSelectedItem] = useState("Writing");
 
@@ -59,6 +68,21 @@ const Writing = () => {
             </li>
           </ul>
         </div>
+
+
+        <div>
+                {
+                    BLOG_TITLE.map((title) => (
+                        <div key={title.key} className='flex flex-row justify-between'>
+                            <Link to={title.path}>
+                                <div className="ml-40 text-white text-1xl font-bold blog-header">{title.label}</div>
+                            </Link>
+                            <div>{formattedDate}</div>
+                            <hr />
+                        </div>
+                    ))
+                }
+            </div>
 
         </div>
 

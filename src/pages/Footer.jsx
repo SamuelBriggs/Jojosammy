@@ -16,19 +16,19 @@ const Footer = () => {
 
         <div className="flex space-x-4 mt-1">
       <FaTwitter
-        onClick={() => openLink('https://twitter.com/your_twitter_username')}
+        onClick={() => openLink('https://twitter.com/sam')}
         className="cursor-pointer  text-[#acaeb8]"
       />
       <FaEnvelope
-        onClick={() => openLink('mailto:your@email.com')}
+        onClick={() => openLink('mailto:sam@email.com')}
         className="cursor-pointer text-[#acaeb8]"
       />
       <FaGithub
-        onClick={() => openLink('https://github.com/your_github_username')}
+        onClick={() => openLink('https://github.com/sam')}
         className="cursor-pointer text-[#acaeb8]"
       />
       <FaLinkedin
-        onClick={() => openLink('https://www.linkedin.com/in/your_linkedin_username')}
+        onClick={() => openLink('https://www.linkedin.com/in/sam')}
         className="cursor-pointer text-[#acaeb8]"
       />
     </div>

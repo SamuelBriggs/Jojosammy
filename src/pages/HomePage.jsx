@@ -65,20 +65,23 @@ const HomePage = () => {
           aliquet velit malesuada. Ut sit amet consectetur lacus. Integer luctus dui vitae quam ultrices, 
           <a href="https://example.com" className="text-[#22c55e]"> justo bibendum </a>
           <a href="https://example.com" className="text-[#22c55e]"> Vivamus </a>
-          <a href="https://example.com" className="text-[#22c55e]"> Click me </a>
-          <a href="https://example.com" className="text-[#22c55e]"> Click me </a>
-          <a href="https://example.com" className="text-[#22c55e]"> Click me </a>
-          <a href="https://example.com" className="text-[#22c55e]"> Click me </a>
-          <a href="https://example.com" className="text-[#22c55e]"> Click me </a>
+          <a href="https://example.com" className="text-[#22c55e]"> a sem ut arcu  </a>
+          <a href="https://example.com" className="text-[#22c55e]"> ullamcorper </a>
+          <a href="https://example.com" className="text-[#22c55e]"> Phasellus </a>
+          <a href="https://example.com" className="text-[#22c55e]"> efficitur. </a>
           
-            a sem ut arcu efficitur ullamcorper. Phasellus
           ultrices tincidunt dolor, nec pharetra lorem. Integer id arcu nec nisi
           ultrices ullamcorper vel a orci. Sed id quam id nulla fermentum
           vehicula sit amet vel orci. <br /><br />
           
           Vivamus tincidunt efficitur sapien, eget cursus dolor varius sed. Sed hendrerit urna non purus fringilla, non
-          ultrices odio rhoncus. Donec a justo ac ipsum pharetra varius. Sed eu
-          tincidunt turpis. Sed fermentum tellus id tellus tincidunt, vel
+          ultrices odio rhoncus. Donec a justo ac ipsum pharetra varius. 
+          <a href="https://example.com" className="text-[#22c55e]"> Sed eu tincidunt </a>
+          <a href="https://example.com" className="text-[#22c55e]"> turpis.  </a>
+          <a href="https://example.com" className="text-[#22c55e]"> Sed fermentum </a>
+          <a href="https://example.com" className="text-[#22c55e]"> tellus </a>
+          
+          id tellus tincidunt, vel
           ultricies urna vestibulum. Nunc auctor, justo vel dictum efficitur,
           eros dui lobortis felis, id lobortis sapien metus vel justo. Sed non
           dui quis nibh vehicula vehicula. 
