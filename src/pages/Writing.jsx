@@ -70,14 +70,14 @@ const Writing = () => {
         </div>
 
 
-        <div>
+        <div className="ml-40 w-7/12">
                 {
                     BLOG_TITLE.map((title) => (
-                        <div key={title.key} className='flex flex-row justify-between'>
+                        <div key={title.key} className='flex border-b border-bg-[#acaeb8] mb-3 pointer-cursor flex-row justify-between'>
                             <Link to={title.path}>
-                                <div className="ml-40 text-white text-1xl font-bold blog-header">{title.label}</div>
+                                <div className="text-white text-1xl font-bold blog-header">{title.label}</div>
                             </Link>
-                            <div>{formattedDate}</div>
+                            <div className="text-[#acaeb8]">{formattedDate}</div>
                             <hr />
                         </div>
                     ))
