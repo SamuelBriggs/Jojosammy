@@ -1,6 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
 body {
   background-color: #111827;
@@ -22,12 +22,12 @@ body {
 }
 
 @font-face {
-  font-family: 'NimbusSanL-RegIta';
+  font-family: 'NimbusSanL-BolIta';
   src: url(../src/images/fonts/NimbusSanL-RegIta.woff) format('woff');
 }
 
 .name {
-  font-family: 'NimbusSanL-Reg', sans-serif;
+  font-family: 'NimbusSanL-RegIta', sans-serif;
 }
 
 

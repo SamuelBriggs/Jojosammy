@@ -1,16 +1,15 @@
 import React from "react";
 import Logo from "../images/svg/Logo.svg";
 
-const Layout = ({ children }) => {
+const Layout = () => {
   return (
-    <div>
+    <div className="flex flex-row">
       <div className="">
-        <img className="" src={Logo} alt="No image yet" />
+        <img className="" style={{width: "35px", height: "35px"}} src={Logo} alt="No image yet" />
       </div>
-      <div className="text-white text-2xl font-bold name">
+      <div className="ml-40 text-white text-2xl font-bold name">
         Samuel Alawode
       </div>
-      {children}
     </div>
   );
 };
