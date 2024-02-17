@@ -21,7 +21,7 @@ const HomePage = () => {
           <ul>
             <li
               onClick={() => handleItemClick("About")}
-              className={`cursor-pointer mb-2 text-sm ${
+              className={`cursor-pointer mb-2 text-sm sm:text-md ${
                 selectedItem === "About" ? "text-[#22c55e]" : "text-white"
               }`}
             >
