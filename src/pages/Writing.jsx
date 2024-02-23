@@ -24,7 +24,7 @@ const Writing = () => {
     <div className='mt-32 ml-40'>
         <Header /> 
 
-        <div className='flex flex-row custom:flex-col mt-20 custom:-ml-40 custom:justify-center'>
+        <div className='flex flex-row custom:flex-col mt-20 custom:-ml-40  custom:justify-center'>
         <div className="mb-2 custom:mb-8 custom:flex custom:flex-row">
           <ul className="flex flex-col w-full h-full custom:h-12 custom:pt-2 custom:border custom:mr-7 custom:ml-7 custom:flex custom:flex-row custom:space-x-20 custom:justify-center">
             <li
@@ -70,25 +70,47 @@ const Writing = () => {
         </div>
 
 
-        <div className="ml-40 w-7/12">
+        <div className="ml-40 custom:ml-7 custom:-mr-0 w-7/12  custom:w-11/12">
                 {
                     BLOG_TITLE.map((title) => (
-                        <div key={title.key} className='flex border-b border-bg-[#acaeb8] mb-3 pointer-cursor flex-row justify-between'>
+                        <div key={title.key} className='flex border-b border-bg-[#acaeb8] mb-4 pointer-cursor flex-row justify-between items-start'>
+                            <div className="">
                             <Link to={title.path}>
-                                <div className="text-white text-1xl font-bold blog-header">{title.label}</div>
+                                <div className="text-white custom:text-md font-bold custom:font-normal blog-header">{title.label}</div>
                             </Link>
-                            <div className="text-[#acaeb8]">{formattedDate}</div>
+                            </div>
+
+                            <div className="text-[#acaeb8] custom:text-sm">
+                              {formattedDate}
+                              </div>
+                            
+                            <div className="">
                             <hr />
+                            </div>
                         </div>
-                    ))
-                }
+                    ))}
             </div>
-
         </div>
-
         <Footer />
     </div>
   )
 }
+export default Writing;
+/**
+ * // Inside the map function
+<div key={title.key} className='flex border-b border-bg-[#acaeb8] mb-4 pointer-cursor flex-row justify-between items-start'>
+    <div className="">
+        <Link to={title.path}>
+            <div className="text-white custom:text-md font-bold custom:font-normal blog-header">{title.label}</div>
+        </Link>
+    </div>
 
-export default Writing
+    <div className="text-[#acaeb8] custom:text-sm ">
+        {formattedDate}
+    </div>
+
+    <div className="">
+        <hr />
+    </div>
+</div>
+ */

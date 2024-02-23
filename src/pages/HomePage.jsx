@@ -62,7 +62,7 @@ const HomePage = () => {
         </div>
 
 
-        <div className="ml-40 text-[#acaeb8] text-sm w-6/12 custom:text-sm custom:mt-5 custom:w-9/12 custom:ml-20">
+        <div className="ml-40 text-[#acaeb8] text-md w-6/12 custom:text-sm custom:mt-5 custom:w-9/12 custom:ml-20">
           Lorem ipsum dolor sit amet, consectetur <span className="text-[#22c55e]">adipiscing elit</span>.<br /><br />
           aliquet velit malesuada. Ut sit amet consectetur lacus. Integer luctus dui vitae quam ultrices, 
           <a href="https://example.com" className="text-[#22c55e]"> justo bibendum </a>
