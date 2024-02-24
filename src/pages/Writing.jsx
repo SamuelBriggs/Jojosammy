@@ -26,7 +26,7 @@ const Writing = () => {
 
         <div className='flex flex-row custom:flex-col mt-20 custom:-ml-40
         custom:justify-center custom2:flex-col custom2:-ml-40 custom2:justify-center
-        custom3:flex-col custom3:-ml-40 custom3:justify-center'>
+        custom3:flex-col custom3:-ml-40 custom3:justify-center custom3:mt-10'>
         <div className="mb-2 custom:mb-8 custom:flex custom:flex-row 
         custom2:flex custom2:flex-row custom3:flex custom3:flex-row">
           <ul className="flex flex-col w-full h-full custom:h-12 
@@ -107,21 +107,3 @@ const Writing = () => {
   )
 }
 export default Writing;
-/**
- * // Inside the map function
-<div key={title.key} className='flex border-b border-bg-[#acaeb8] mb-4 pointer-cursor flex-row justify-between items-start'>
-    <div className="">
-        <Link to={title.path}>
-            <div className="text-white custom:text-md font-bold custom:font-normal blog-header">{title.label}</div>
-        </Link>
-    </div>
-
-    <div className="text-[#acaeb8] custom:text-sm ">
-        {formattedDate}
-    </div>
-
-    <div className="">
-        <hr />
-    </div>
-</div>
- */
