@@ -17,7 +17,7 @@ const Misc = () => {
 
         <div className='flex flex-row custom:flex-col mt-20 custom:-ml-40 
         custom:justify-center custom2:flex-col custom2:-ml-40 custom2:justify-center
-        custom3:flex-col custom3:-ml-40 custom3:justify-center'>
+        custom3:flex-col custom3:-ml-40 custom3:justify-center custom3:mt-10'>
         <div className="mb-2 custom:flex custom:flex-row custom2:flex custom2:flex-row
         custom3:flex custom3:flex-row">
           <ul className="flex flex-col w-full h-full custom:h-12 custom:pt-2 custom:border custom:mr-7 
