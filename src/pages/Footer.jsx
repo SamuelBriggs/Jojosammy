@@ -9,12 +9,12 @@ const Footer = () => {
       };
 
   return (
-    <div className='mt-20 ml-52 flex flex-row w-6/12 custom:w-full custom:-ml-20 justify-between'>
-        <div className='text-[#acaeb8] custom:flex custom:flex-row custom:text-md custom:w-full'>
+    <div className='mt-20 ml-52 flex flex-row w-6/12 custom:w-full custom:-ml-20 justify-between   custom2:w-full custom2:-ml-20 '>
+        <div className='text-[#acaeb8] custom:flex custom:flex-row custom:text-md custom:w-full custom2:-ml-7'>
             C {currentDate.getFullYear()} Samuel Alawode.
         </div>
 
-        <div className="flex space-x-4 mt-1">
+        <div className="flex space-x-4 mt-1 custom2:-mr-4">
       <FaTwitter
         onClick={() => openLink('https://twitter.com/sam')}
         className="cursor-pointer  text-[#acaeb8]"

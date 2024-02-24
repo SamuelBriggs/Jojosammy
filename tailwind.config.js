@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     screens: {
       'custom': {'min': '524px', 'max': '639px'},
-      'custom2': {'min': '400px', 'max': '523px'},
+      'custom2': {'min': '450px', 'max': '523px'},
+      'custom3': {'min': '350px', 'max': '449px'},
       'sm': {'min': '640px', 'max': '767px'},
       // => @media (min-width: 640px and max-width: 767px) { ... }
       // Styles for screens larger than 640px wide (e.g., tablets and desktops
