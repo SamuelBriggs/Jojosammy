@@ -74,7 +74,7 @@ const Writing = () => {
         </div>
 
 
-        <div className="ml-40 custom:ml-7 custom:-mr-0 w-7/12  custom:w-11/12">
+        <div className="ml-40 custom:ml-7 custom:-mr-0 w-7/12 custom:w-11/12 custom2:mt-8 custom2:ml-10 custom2:w-10/12">
                 {
                     BLOG_TITLE.map((title) => (
                         <div key={title.key} className='flex border-b border-bg-[#acaeb8] mb-4 pointer-cursor flex-row justify-between items-start'>
