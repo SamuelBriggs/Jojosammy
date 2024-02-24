@@ -52,4 +52,11 @@ export const BLOG_TITLE = [
         label: "Jekins: A burstly Library",
         path: "jenkins",
       },
+
+    {
+      key: "breaking bad",
+      label: "hero",
+      path: "breaking"
+
+    }
 ]
