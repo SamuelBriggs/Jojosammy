@@ -27,6 +27,7 @@ const Writing = () => {
         <div className='flex flex-row custom:flex-col mt-20 custom:-ml-40
         custom:justify-center custom2:flex-col custom2:-ml-40 custom2:justify-center
         custom3:flex-col custom3:-ml-40 custom3:justify-center custom3:mt-10'>
+        
         <div className="sm:-ml-16 mb-2 custom:mb-8 custom:flex custom:flex-row 
         custom2:flex custom2:flex-row custom3:flex custom3:flex-row">
           <ul className="flex flex-col w-full h-full custom:h-12 
@@ -79,7 +80,7 @@ const Writing = () => {
         </div>
 
 
-        <div className="sm:ml-14 sm:w-10/12 ml-40 custom:ml-7 custom:-mr-0 w-7/12 custom:w-11/12 custom2:mt-8 
+        {/* <div className="sm:border sm:ml-14 sm:w-10/12 ml-40 custom:ml-7 custom:-mr-0 w-7/12 custom:w-11/12 custom2:mt-8 
         custom2:ml-10 custom2:w-10/12 custom3:mt-8 custom3:w-10/12 custom3:ml-8 custom3:mr-5
         custom3:text-md">
                 {
@@ -100,7 +101,33 @@ const Writing = () => {
                             </div>
                         </div>
                     ))}
-            </div>
+            </div> */}
+
+
+<table className="sm:border sm:ml-14 sm:w-10/12 ml-40 custom:ml-7 custom:-mr-0 w-7/12 custom:w-11/12 custom2:mt-8 
+    custom2:ml-10 custom2:w-10/12 custom3:mt-8 custom3:w-10/12 custom3:ml-8 custom3:mr-5
+    custom3:text-md">
+    <tbody>
+        {BLOG_TITLE.map((title) => (
+            <tr key={title.key} className='border-b border-bg-[#acaeb8] mb-4 pointer-cursor'>
+                <td className="pr-4">
+                    <Link to={title.path}>
+                        <div className="text-white custom:text-md font-bold custom:font-normal blog-header">{title.label}</div>
+                    </Link>
+                </td>
+
+                <td className="text-[#acaeb8] custom:text-sm">
+                    {formattedDate}
+                </td>
+            </tr>
+        ))}
+    </tbody>
+</table>
+
+
+
+
+
         </div>
         <Footer />
     </div>
