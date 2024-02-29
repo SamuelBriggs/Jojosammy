@@ -31,7 +31,7 @@ const Writing = () => {
         custom2:flex custom2:flex-row custom3:flex custom3:flex-row">
           <ul className="flex flex-col w-full h-full custom:h-12 
           custom:pt-2 custom:border custom:mr-7 custom:ml-7 
-          custom:flex custom:flex-row custom:space-x-20 
+          custom:flex custom:flex-row custom:space-x-24 
           custom:justify-center custom2:h-10 custom2:pt-2 custom2:border custom2:mr-7 custom2:ml-7 custom2:flex custom2:flex-row 
           custom2:space-x-20 custom2:justify-center
           custom3:h-10 custom3:pt-2 custom3:border custom3:mr-7 custom3:ml-7 custom3:flex custom3:flex-row 
