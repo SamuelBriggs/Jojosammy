@@ -21,7 +21,7 @@ const Writing = () => {
   };
 
   return (
-    <div className='mt-32 ml-40'>
+    <div className='mt-32 ml-40 mb-10 sm:ml-28 sm:mr-10'>
         <Header /> 
 
         <div className='flex flex-row custom:flex-col mt-20 custom:-ml-40
@@ -79,7 +79,7 @@ const Writing = () => {
         </div>
 
 
-        <div className="ml-40 custom:ml-7 custom:-mr-0 w-7/12 custom:w-11/12 custom2:mt-8 
+        <div className="sm:ml-14 sm:w-10/12 ml-40 custom:ml-7 custom:-mr-0 w-7/12 custom:w-11/12 custom2:mt-8 
         custom2:ml-10 custom2:w-10/12 custom3:mt-8 custom3:w-10/12 custom3:ml-8 custom3:mr-5
         custom3:text-md">
                 {

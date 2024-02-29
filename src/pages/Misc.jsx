@@ -12,7 +12,7 @@ const Misc = () => {
   };
 
   return (
-    <div className='mt-32 ml-40'>
+    <div className='mt-32 ml-40 mb-10'>
         <Header /> 
 
         <div className='flex flex-row custom:flex-col mt-20 custom:-ml-40 
@@ -69,7 +69,7 @@ const Misc = () => {
           </ul>
         </div>
 
-        <div className="custom3:mt-8 custom3:w-10/12 custom3:ml-8 custom3:mr-5
+        <div className="sm:ml-14 sm:w-10/12 custom3:mt-8 custom3:w-10/12 custom3:ml-8 custom3:mr-5
         custom3:text-md">
 
         </div>

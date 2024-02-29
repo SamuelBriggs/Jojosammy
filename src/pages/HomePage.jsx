@@ -13,7 +13,7 @@ const HomePage = () => {
 
 
   return (
-    <div className="mt-32 ml-40">
+    <div className="mt-32 ml-40 mb-10">
       <Header />
       {/* */}
       <div className="flex flex-row custom:flex-col mt-20 
@@ -71,7 +71,7 @@ const HomePage = () => {
         </div>
 
 
-        <div className="sm:border sm:ml-14 sm:w-10/12 ml-40 text-[#acaeb8] text-md w-6/12 custom:text-sm custom:mt-5 
+        <div className="sm:ml-14 sm:w-10/12 ml-40 text-[#acaeb8] text-md w-6/12 custom:text-sm custom:mt-5 
         custom:w-9/12 custom:ml-20 custom2:text-md custom2:mt-5 custom2:w-10/12 
         custom2:ml-10 custom3:mt-8 custom3:w-10/12 custom3:ml-8 custom3:mr-5
         custom3:text-md">
