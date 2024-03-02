@@ -1,0 +1,39 @@
+.custom-heading {
+    font-family: 'Anton', sans-serif;
+    font-size: 36px; 
+  }
+  
+  .header {
+    font-family: 'NimbusSanL-Bol', sans-serif;
+    font-size: 20px; 
+    font-style: bold;
+    font-weight: 900px;
+    color: rgb(255, 255, 255);
+    line-height: 26px;
+  }
+
+  .custom-heading {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px; 
+  }
+  
+  .body {
+    font-family: 'PT Serif', sans-serif;
+    font-size: 18px; 
+    font-style: normal;
+    font-weight: 400px;
+    line-height: 28px;
+    color: rgb(209, 213, 219);
+  }
+
+  .custom-heading {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 36px; 
+  }
+  
+  .custom-paragraph {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px; 
+  }
+
+
