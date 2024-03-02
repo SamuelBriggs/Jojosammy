@@ -113,6 +113,33 @@ const Rust = () => {
           </p>
 
 
+
+          <div className='border body' style={{backgroundColor:"#0e121a", padding:"25px", width: "700px", height:"500px"}}>
+          <p>
+          Benchmark 1: memcpy
+          Time (mean ± σ):      52.7 ms ±   0.7 ms    [User: 41.6 ms, System: 47.6 ms]
+          Range (min … max):    50.7 ms …  54.6 ms    53 runs <br /><br />
+
+          Benchmark 2: scalar
+          Time (mean ± σ):     382.3 ms ±   4.0 ms    [User: 408.6 ms, System: 39.1 ms]
+          Range (min … max):   376.1 ms … 388.7 ms    10 runs <br /><br />
+
+          Benchmark 3: simd (aarch64 neon)
+          Time (mean ± σ):      52.3 ms ±   0.6 ms    [User: 53.8 ms, System: 47.2 ms]
+          Range (min … max):    51.3 ms …  54.2 ms    54 runs <br /><br />
+
+          Summary
+          simd ran
+          1.01 ± 0.02 times faster than memcpy
+          7.32 ± 0.11 times faster than scalar
+                 
+          </p>
+          </div><br /><br />
+
+
+
+          
+
           
           <p className='body'>
           Assume in the above two examples that the comparison operation takes exactly the <br />
