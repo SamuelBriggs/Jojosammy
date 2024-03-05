@@ -34,7 +34,7 @@ const Rust = () => {
           been there).<br /><br />
           </p>
 
-          <div className='border body' style={{backgroundColor:"#0e121a", padding:"25px", width: "700px"}}>
+          <div className='border body' style={{backgroundColor:"#0e121a", color:"#FF0800", padding:"25px", width: "700px"}}>
           If you missed previous devlogs, or you want to learn more about what Ghostty is, <br />
           please see the Ghostty page on this website.
           </div><br /><br />
@@ -59,7 +59,7 @@ const Rust = () => {
           A naive, but typical approach is to read the bytes in a for loop: <br /><br />
 
           <div className='border body' style={{backgroundColor:"#0e121a", padding:"25px", width: "700px", height:"200px"}}>
-          <p>
+          <p className="text-[#FF0800]">
           const bytes = read();
                  
           </p>
@@ -83,7 +83,7 @@ const Rust = () => {
 
 
           <div className='border body' style={{backgroundColor:"#0e121a", padding:"25px", width: "700px", height:"200px"}}>
-          <p>
+          <p className="text-[#FF0800]">
           const bytes = read();
                  
           </p>
@@ -114,8 +114,8 @@ const Rust = () => {
 
 
 
-          <div className='border body' style={{backgroundColor:"#0e121a", padding:"25px", width: "700px", height:"500px"}}>
-          <p>
+          <div className='border body' style={{backgroundColor:"#0e121a", padding:"25px", width: "700px", height:"360px"}}>
+          <p className="text-[#FF0800]">
           Benchmark 1: memcpy
           Time (mean ± σ):      52.7 ms ±   0.7 ms    [User: 41.6 ms, System: 47.6 ms]
           Range (min … max):    50.7 ms …  54.6 ms    53 runs <br /><br />
