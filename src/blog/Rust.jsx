@@ -40,9 +40,9 @@ const Rust = () => {
           <br />
           <br />
           <div className="">
-            <div className="header flex flex-row justify-between">
-              <h3>Ghostty Devlog 006</h3>
-              <p>March 2, 2024</p>
+            <div className="flex flex-row justify-between">
+              <h3 className="header">Ghostty Devlog 006</h3>
+              <p className="italic text-[#acaeb8]">March 2, 2024</p>
             </div>
             <br />
             <br />
