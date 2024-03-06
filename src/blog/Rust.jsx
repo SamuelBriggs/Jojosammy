@@ -10,9 +10,7 @@ import Links from "../pages/Links";
 
 const Rust = () => {
   return (
-    <div className="mt-40 ml-40">
-
-      <div className="flex flex-row space-x-20">
+    <div className="mt-40 ml-40 flex flex-row space-x-20">
 
         <div className="">
         <div className=" custom:w-12 flex-shrink-0 custom2:justify-center custom3:flex-col custom3:justify-center">
@@ -25,7 +23,7 @@ const Rust = () => {
           <Links />
         </div>
 
-        <div>
+        <div className="overflow-y-auto">
           <div
             className="custom:ml-40 custom:w-52 text-white text-2xl font-bold name 
         custom2:justify-center custom2:mt-10 custom3:mt-8 sm:ml-20 md:ml-20 lg:ml-20"
@@ -333,12 +331,11 @@ const Rust = () => {
               <p className="body italic">The End! Thanks for reading</p>
             </div>
           </div>
-        </div>
-      </div>
 
-      <div>
-        <Footer />
-      </div>
+          <Footer />
+
+        </div>
+        
     </div>
   );
 };
