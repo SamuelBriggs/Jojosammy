@@ -23,7 +23,7 @@ const Rust = () => {
           <Links />
         </div>
 
-        <div className="">
+        <div className="h-full">
           <div
             className="custom:ml-40 custom:w-52 text-white text-2xl font-bold name 
         custom2:justify-center custom2:mt-10 custom3:mt-8 sm:ml-20 md:ml-20 lg:ml-20"
@@ -40,7 +40,7 @@ const Rust = () => {
           <div className="">
             <div className="flex flex-row justify-between">
               <h3 className="header">Ghostty Devlog 006</h3>
-              <p className="italic text-[#acaeb8]">March 2, 2024</p>
+              <p className="italic text-[#acaeb8] mr-20">March 2, 2024</p>
             </div>
             <br />
             <br />
@@ -332,7 +332,10 @@ const Rust = () => {
             </div>
           </div>
 
+          <div className="mb-40">
           <Footer />
+          </div>
+          
 
         </div>
         
