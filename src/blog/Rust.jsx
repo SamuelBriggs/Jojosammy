@@ -87,7 +87,12 @@ const Rust = () => {
             </div>
             <br />
             <br />
-            <div className="border-b" /> <br />
+
+
+            {/* This is the line code, if you ever need it */}
+            <div className="border-b border-[#808080]" style={{ width: '90%' }}  /> <br />
+            
+            
             <br />
             <p className="body">
               Improving Plain Text Throughput with SIMD (#1472) <br />
@@ -231,6 +236,14 @@ const Rust = () => {
             </div>
             <br />
             <br />
+
+
+
+            {/* This is the line code, if you ever need it */}
+            <div className="border-b border-[#808080]" style={{ width: '90%' }}  /> <br />
+
+
+
             <p className="body">
               Assume in the above two examples that the comparison operation
               takes exactly the <br />
