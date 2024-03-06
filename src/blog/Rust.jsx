@@ -5,6 +5,11 @@ import Logo from "../images/svg/Logo.svg";
 import VideoPlayer from "../video/VideoPlayer";
 import "../styles/Rust.css";
 import Links from "../pages/Links";
+import Text1 from "../canBeDeleted/Text1";
+import Text2 from "../canBeDeleted/Text2";
+import Text3 from "../canBeDeleted/Text3";
+
+
 
 const Rust = () => {
   return (
@@ -36,40 +41,22 @@ const Rust = () => {
           <br />
           <br />
           <div className="">
+
             <div className="flex flex-row justify-between">
               <h3 className="header">Ghostty Devlog 006</h3>
               <p className="italic text-[#acaeb8] mr-20">March 2, 2024</p>
             </div>
+            
             <br />
             <br />
             <p className="body">
               Hello! Welcome to the official devlog for Ghostty 👻!
             </p>
             <br />
-            <p className="body">
-              This devlog is going to be focused on speed 🚀. I'm going to show
-              various ways we've <br />
-              made Ghostty really, really, fast in recent weeks. There are many
-              ways to measure the <br />
-              speed of a terminal emulator. Perhaps in another blog post I'll
-              define each of the ways, <br />
-              but today I will simply state that the performance work showcased
-              in this devlog will <br />
-              all revolve around IO throughput.
-              <br />
-              <br />
-              IO throughput is the speed that the program running within the
-              terminal emulator <br />
-              (the shell, neovim, tmux, cat, etc.) can pump bytes to the
-              terminal emulator and have <br />
-              them processed. This particular metric has a very real world
-              impact, from tailing very <br />
-              loud log output to accidentally dumping a large file to the
-              terminal (we've all <br />
-              been there).
-              <br />
-              <br />
-            </p>
+            
+            <Text1 />
+
+
             <div
               className="border body"
               style={{
