@@ -23,7 +23,7 @@ const Rust = () => {
           <Links />
         </div>
 
-        <div className="overflow-y-auto">
+        <div className="">
           <div
             className="custom:ml-40 custom:w-52 text-white text-2xl font-bold name 
         custom2:justify-center custom2:mt-10 custom3:mt-8 sm:ml-20 md:ml-20 lg:ml-20"
