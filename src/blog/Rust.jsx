@@ -1,8 +1,6 @@
 import React from "react";
-import Header from "../pages/Header";
-import Footer from "../pages/Footer";
+import BlogFooter from "../pages/BlogFooter";
 import Image1 from "../images/jpeg/Code1.JPG";
-import Image2 from "../images/jpeg/Code2.JPG";
 import Logo from "../images/svg/Logo.svg";
 import VideoPlayer from "../video/VideoPlayer";
 import "../styles/Rust.css";
@@ -346,7 +344,7 @@ const Rust = () => {
           </div>
 
           <div className="mb-40">
-          <Footer />
+             <BlogFooter />
           </div>
           
 
