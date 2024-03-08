@@ -9,12 +9,12 @@ const BlogFooter = () => {
       };
 
   return (
-    <div className='mt-40 flex flex-row justify-between'>      
+    <div className='mt-40 flex flex-row justify-between custom:-ml-20'>      
       <div className='text-[#acaeb8] custom:flex custom:flex-row custom:text-md custom:w-full custom2:-ml-7'>
          © {currentDate.getFullYear()} Samuel Alawode.
       </div>
 
-      <div className="flex space-x-4 mt-1 custom2:-mr-4">
+      <div className="flex space-x-4 mt-1 custom2:-mr-4 custom:mr-40">
       <FaTwitter
         onClick={() => openLink('https://twitter.com/sam')}
         className="cursor-pointer  text-[#acaeb8]"

@@ -7,12 +7,12 @@ module.exports = {
       'custom2': {'min': '450px', 'max': '523px'},
       'custom3': {'min': '350px', 'max': '449px'},
       'sm': {'min': '640px', 'max': '767px'},
-      // => @media (min-width: 640px and max-width: 767px) { ... }
-      // Styles for screens larger than 640px wide (e.g., tablets and desktops
 
-      'md': {'min': '768px', 'max': '1023px'},
+      'md': {'min': '768px', 'max': '899px'},
       // => @media (min-width: 768px and max-width: 1023px) { ... }
 
+      'mlg': {'min': '900px', 'max': '1023px'},
+      // 'mlg': {'min': '1024px', 'max': '1279px'},
       'lg': {'min': '1024px', 'max': '1279px'},
       // => @media (min-width: 1024px and max-width: 1279px) { ... }
 

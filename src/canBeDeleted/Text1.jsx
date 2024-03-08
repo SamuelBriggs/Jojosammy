@@ -3,7 +3,7 @@ import React from 'react'
 const Text1 = () => {
   return (
     <div>
-        <p className="body">
+        <p className="md-body w-full lg:text-lg">
               This devlog is going to be focused on speed 🚀. I'm going to show
               various ways we've <br />
               made Ghostty really, really, fast in recent weeks. There are many

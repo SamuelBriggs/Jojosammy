@@ -12,6 +12,15 @@
     line-height: 26px;
   }
 
+  .md-header {
+    font-family: 'NimbusSanL-Bol', sans-serif;
+    font-size: 17px; 
+    font-style: bold;
+    font-weight: 700px;
+    color: rgb(255, 255, 255);
+    line-height: 26px;
+  }
+
   .custom-heading {
     font-family: 'Inter', sans-serif;
     font-size: 16px; 
@@ -19,7 +28,17 @@
   
   .body {
     font-family: 'PT Serif', sans-serif;
-    font-size: 18px; 
+    font-size: 19px; 
+    font-style: normal;
+    font-weight: 400px;
+    line-height: 28px;
+    color: rgb(209, 213, 219);
+  }
+
+
+  .md-body {
+    font-family: 'PT Serif', sans-serif;
+    /* font-size: 17px;  */
     font-style: normal;
     font-weight: 400px;
     line-height: 28px;

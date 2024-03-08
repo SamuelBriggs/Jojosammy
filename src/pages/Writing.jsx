@@ -83,29 +83,6 @@ const Writing = () => {
           </ul>
         </div>
 
-        {/* <div className="sm:border sm:ml-14 sm:w-10/12 ml-40 custom:ml-7 custom:-mr-0 w-7/12 custom:w-11/12 custom2:mt-8 
-        custom2:ml-10 custom2:w-10/12 custom3:mt-8 custom3:w-10/12 custom3:ml-8 custom3:mr-5
-        custom3:text-md">
-                {
-                    BLOG_TITLE.map((title) => (
-                        <div key={title.key} className='flex border-b border-bg-[#acaeb8] mb-4 pointer-cursor flex-row justify-between items-start'>
-                            <div className="">
-                            <Link to={title.path}>
-                                <div className="text-white custom:text-md font-bold custom:font-normal blog-header">{title.label}</div>
-                            </Link>
-                            </div>
-
-                            <div className="text-[#acaeb8] custom:text-sm">
-                              {formattedDate}
-                              </div>
-                            
-                            <div className="">
-                            <hr />
-                            </div>
-                        </div>
-                    ))}
-            </div> */}
-
         <table
           className="sm:border sm:ml-14 sm:w-10/12 ml-40 custom:ml-7 custom:-mr-0 w-7/12 custom:w-11/12 custom2:mt-8 
     custom2:ml-10 custom2:w-10/12 custom3:mt-8 custom3:w-10/12 custom3:ml-8 custom3:mr-5
