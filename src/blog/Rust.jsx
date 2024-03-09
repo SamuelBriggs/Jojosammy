@@ -120,14 +120,16 @@ const Rust = () => {
 
 
 
-          {/* This is the first paragraph or body */}
+          {/* This is the post/blog body */}
           <div className="mlg:w-full">
           <PostBody />
           </div>
 
 
 
-          
+
+           {/* This is the box with faint black background and red text, the div is 
+          the one making it faint black color and the p tag is the one caring the red text */}          
           <div className="border md-body bg-[#0e121a] p-5 lg:text-lg xl:w-10/12">
             <p className="text-[#FF0800]">
             If you missed previous devlogs, or you want to learn more about what
@@ -149,68 +151,17 @@ const Rust = () => {
 
 
 
-          <p className="md-body lg:text-lg">
-            Improving Plain Text Throughput with SIMD (#1472) <br />
-            <br />
-            A program uses a single stream (a "pty") to communicate to the
-            terminal emulator.
-            <br />
-            This stream can contain either plain text or control characters.{" "}
-            <br />
-            <br />
-            Plain text prints directly to the terminal and is sent as-is. For
-            example, to write "Hello, <br />
-            World!" to the terminal, the program writes Hello World! UTF-8
-            encoded1 to the pty. <br />
-            <br />
-            Control characters are used to do things such as set style
-            attributes (foreground color, <br />
-            underline, bold, etc.), move the cursor, delete lines, change the
-            keyboard protocol, etc. <br />
-            Control characters have various formats but one thing almost all of
-            them2 have in <br />
-            common is they start with the escape character (hex 0x1B). <br />A
-            naive, but typical approach is to read the bytes in a for loop:{" "}
-            <br />
-            <br />
-            <div className="border md-body body bg-[#0e121a] p-5 lg:text-lg xl:w-10/12">
-              <p className="text-[#FF0800]">const bytes = read();</p>
-            </div>
-            <br />
-            <br />
-            This looks at one byte at a time. But computers since the late 90s
-            have been able <br />
-            to perform operations on multiple bytes at a time using SIMD
-            instructions ("Single <br />
-            Instruction Multiple Data"). According to Valve's latest Steam
-            Hardware Survey, over <br />
-            99% of active computers support the ability to look at 16 to 32
-            bytes in one CPU <br />
-            instruction. <br />
-            <br />
-            We often rely on compilers to optimize our code for us so we don't
-            have to think about <br />
-            the minutia of individual CPU instructions. Unfortunately, compilers
-            are notoriously <br />
-            bad at autovectorization and with the exception of relatively
-            trivial loops, compilers <br />
-            rarely autovectorize effectively. SIMD is a rare scenario where
-            hand-writing assembly <br />
-            (or near it) often results in significantly better performance over
-            a state of the art <br />
-            optimizing compiler. The SIMD approach to finding control sequences
-            above looks like this:
-            <br />
-            <br />
-          </p>
           
-          <div className="border md-body bg-[#0e121a] p-5 lg:text-lg xl:w-10/12">
-            <p className="text-[#FF0800]">const bytes = read()</p>
+          {/* This is the post body */}
+          <div className="mlg:w-full">
+          <PostBody />
           </div>
-          
-          <br />
-          <br />
-          
+
+
+
+
+          {/* This is the box with faint black background and red text, the div is 
+          the one making it faint black color and the p tag is the one caring the red text */}
           <div className="border md-body bg-[#0e121a] p-5 lg:text-lg xl:w-10/12">
             <p className="text-[#FF0800]">
               Benchmark 1: memcpy Time (mean ± σ): 52.7 ms ± 0.7 ms [User: 41.6
@@ -237,45 +188,16 @@ const Rust = () => {
             style={{ width: "90%" }}
           />{" "}
           <br />
-          <p className="md-body lg:text-lg">
-            Assume in the above two examples that the comparison operation takes
-            exactly the <br />
-            same amount of time. The SIMD example would process the bytes 16x
-            faster. Reality is <br />
-            not quite so simple, but you can get staggering speedups through
-            SIMD.
-            <br />
-            <br />
-            To further complicate things, SIMD instruction sets vary by CPU
-            generation. If you're <br />
-            distributing a binary form of your program and want to take
-            advantage of the best <br />
-            features available, you must write a variation for each SIMD
-            instruction set, compile <br />
-            each form, and choose the correct version at runtime using CPU
-            feature detection (i.e. <br />
-            using the cpuid instruction on x86).
-            <br />
-            <br />
-            For example, the code above says "chunk of 16 bytes." Well,
-            depending on the <br />
-            hardware, that might be 16 bytes (aarch64 neon instruction set such
-            as on Apple <br />
-            Silicon), 32 bytes for AVX2, 64 bytes for AVX512, etc. And its not
-            just the size that <br />
-            varies, the literal CPU instructions (binary code) varies.
-            Therefore, you must write or <br />
-            compile the code multiple times.
-            <br />
-            <br />
-            Ghostty now uses SIMD to execute roughly the second code sample
-            above. <br />
-            Additionally, we use SIMD to also decode UTF-83 multiple bytes at a
-            time. On Apple <br />
-            Silicon (M3 Max), Ghostty now processes ASCII input 7.3x faster:
-            <br />
-            <br />
-          </p>{" "}
+
+
+
+          {/* This is the Post Body  */}
+          <div>
+            <PostBody />
+          </div>
+
+
+
           <br />
           <div style={{}} className="">
             <img src={Image1} alt="No Image" className="" />
@@ -286,6 +208,7 @@ const Rust = () => {
           <br />
 
 
+          {/* This is the Post Body  */}
           <div>
             <PostBody />
           </div>
@@ -304,14 +227,26 @@ const Rust = () => {
           <br />
           <br />
           <br />
+
+
+
+          {/* The end and acknowledgment */}
           <div>
             <p className="md-body italic lg:text-lg">The End! Thanks for reading</p>
           </div>
         </div>
 
+
+
+        {/* This footer is different in design from the Footer, I skipped having to edit the original 
+        Footer component and just created another one that would suit blogs, that is why I have blog footer */}
         <div className="mb-40 mlg:w-5/6 md:mr-8 lg:mr-20 xl:mr-40">
           <BlogFooter />
         </div>
+
+
+
+
       </div>
     </div>
   );
