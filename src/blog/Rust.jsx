@@ -5,9 +5,7 @@ import Logo from "../images/svg/Logo.svg";
 import VideoPlayer from "../video/VideoPlayer";
 import "../styles/Rust.css";
 import Links from "../pages/Links";
-import Text1 from "../canBeDeleted/Text1";
-import Text2 from "../canBeDeleted/Text2";
-import Text3 from "../canBeDeleted/Text3";
+import PostBody from "../writing-component/RustBody";
 
 
 const Rust = () => {
@@ -124,7 +122,7 @@ const Rust = () => {
 
           {/* This is the first paragraph or body */}
           <div className="mlg:w-full">
-          <Text1 />
+          <PostBody />
           </div>
 
 
@@ -212,45 +210,7 @@ const Rust = () => {
           
           <br />
           <br />
-          <p className="md-body lg:text-lg">
-            Assume in the above two examples that the comparison operation takes
-            exactly the <br />
-            same amount of time. The SIMD example would process the bytes 16x
-            faster. Reality is <br />
-            not quite so simple, but you can get staggering speedups through
-            SIMD.
-            <br />
-            <br />
-            To further complicate things, SIMD instruction sets vary by CPU
-            generation. If you're <br />
-            distributing a binary form of your program and want to take
-            advantage of the best <br />
-            features available, you must write a variation for each SIMD
-            instruction set, compile <br />
-            each form, and choose the correct version at runtime using CPU
-            feature detection (i.e. <br />
-            using the cpuid instruction on x86).
-            <br />
-            <br />
-            For example, the code above says "chunk of 16 bytes." Well,
-            depending on the <br />
-            hardware, that might be 16 bytes (aarch64 neon instruction set such
-            as on Apple <br />
-            Silicon), 32 bytes for AVX2, 64 bytes for AVX512, etc. And its not
-            just the size that <br />
-            varies, the literal CPU instructions (binary code) varies.
-            Therefore, you must write or <br />
-            compile the code multiple times.
-            <br />
-            <br />
-            Ghostty now uses SIMD to execute roughly the second code sample
-            above. <br />
-            Additionally, we use SIMD to also decode UTF-83 multiple bytes at a
-            time. On Apple <br />
-            Silicon (M3 Max), Ghostty now processes ASCII input 7.3x faster:
-            <br />
-            <br />
-          </p>
+          
           <div className="border md-body bg-[#0e121a] p-5 lg:text-lg xl:w-10/12">
             <p className="text-[#FF0800]">
               Benchmark 1: memcpy Time (mean ± σ): 52.7 ms ± 0.7 ms [User: 41.6
