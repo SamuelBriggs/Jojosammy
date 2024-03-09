@@ -1,10 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.7fac9808.css",
-    "main.js": "/static/js/main.c58673b3.js",
+    "main.css": "/static/css/main.20365f8c.css",
+    "main.js": "/static/js/main.cd74d427.js",
     "static/media/Vid1.mp4": "/static/media/Vid1.635a0fece0c93da9a752.mp4",
     "static/media/BadBoysII.jpeg": "/static/media/BadBoysII.2146ee3f1fa86b132c50.jpeg",
-    "static/media/Code2.JPG": "/static/media/Code2.1759bd5e69253ecdb994.JPG",
     "static/media/NimbusSanL-RegIta.woff": "/static/media/NimbusSanL-RegIta.c422ecee4ff5843f50b8.woff",
     "static/media/NimbusSanL-BolIta.woff": "/static/media/NimbusSanL-BolIta.601d3ba4fab608d4e8a4.woff",
     "static/media/NimbusSanL-Reg.woff": "/static/media/NimbusSanL-Reg.8f8329b1f1c5d76884dc.woff",
@@ -12,11 +11,11 @@
     "static/media/Code1.JPG": "/static/media/Code1.1fcb271ca2064ccb280b.JPG",
     "static/media/Logo.svg": "/static/media/Logo.68327ec59143703481752710afb4bf96.svg",
     "index.html": "/index.html",
-    "main.7fac9808.css.map": "/static/css/main.7fac9808.css.map",
-    "main.c58673b3.js.map": "/static/js/main.c58673b3.js.map"
+    "main.20365f8c.css.map": "/static/css/main.20365f8c.css.map",
+    "main.cd74d427.js.map": "/static/js/main.cd74d427.js.map"
   },
   "entrypoints": [
-    "static/css/main.7fac9808.css",
-    "static/js/main.c58673b3.js"
+    "static/css/main.20365f8c.css",
+    "static/js/main.cd74d427.js"
   ]
 }
