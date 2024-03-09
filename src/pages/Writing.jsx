@@ -19,7 +19,7 @@ const Writing = () => {
   };
 
   return (
-    <div className="mt-32 ml-40 mb-10 sm:ml-28 sm:mr-10">
+    <div className="mt-32 ml-40 mb-10 sm:ml-10 sm:mr-10">
       <Header />
 
       <div
@@ -84,9 +84,9 @@ const Writing = () => {
         </div>
 
         <table
-          className="sm:border sm:ml-14 sm:w-10/12 ml-40 custom:ml-7 custom:-mr-0 w-7/12 custom:w-11/12 custom2:mt-8 
+          className="sm:ml-16 sm:w-9/12 ml-40 custom:ml-7 custom:-mr-0 w-7/12 custom:w-11/12 custom2:mt-8 
     custom2:ml-10 custom2:w-10/12 custom3:mt-8 custom3:w-10/12 custom3:ml-8 custom3:mr-5
-    custom3:text-md"
+    custom3:text-md md:ml-32"
         >
           <tbody>
             {BLOG_TITLE.map((title, index) => (
@@ -96,7 +96,7 @@ const Writing = () => {
                   index !== BLOG_TITLE.length - 1 ? "mb-5" : ""
                 }`}
               >
-                <td className="pr-4">
+                <td className="py-2 px-1">
                   <Link to={title.path}>
                     <div className="text-white custom:text-md font-bold custom:font-normal blog-header">
                       {title.label}
@@ -104,13 +104,42 @@ const Writing = () => {
                   </Link>
                 </td>
 
-                <td className="text-[#acaeb8] custom:text-sm">
+                <td className="text-[#acaeb8] italic text-sm">
                   {formattedDate}
-                </td>
-              </tr>
+                </td> 
+              </tr> 
             ))}
           </tbody>
         </table>
+
+{/* <table className="sm:ml-10 sm:w-10/12 ml-40 custom:ml-7 
+custom:-mr-0 w-7/12 custom:w-11/12 custom2:mt-8 custom2:ml-10 
+custom2:w-10/12 custom3:mt-8 custom3:w-10/12 custom3:ml-8 
+custom3:mr-5 custom3:text-md">
+  <tbody>
+    {BLOG_TITLE.map((title, index) => (
+      <tr
+        key={title.key}
+        className={`${index !== BLOG_TITLE.length - 1 ? "mb-5" : ""}`}
+      >
+        <td className="py-2">
+          <Link to={title.path}>
+            <div className="text-white custom:text-md font-bold custom:font-normal blog-header">
+              {title.label}
+            </div>
+          </Link>
+        </td>
+
+        <td className="text-[#acaeb8] custom:text-sm">
+          {formattedDate}
+        </td>
+
+        <td className="border-b border-bg-[#acaeb8] pb-2"></td>
+      </tr>
+    ))}
+  </tbody>
+</table> */}
+
       </div>
       <Footer />
     </div>

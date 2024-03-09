@@ -27,11 +27,11 @@ const Rust = () => {
     custom3:ml-4 custom3:mr-4 custom3:overflow-x-hidden
     
     xl:overflow-x-hidden xl:w-7/12
-    
     2xl:overflow-x-hidden 2xl:w-8/12">
 
         <div className="sm:ml-20 sm:space-y-10 md:hidden mlg:hidden 
-         custom:space-y-10 lg:hidden custom2:space-y-10 custom3:space-y-10 xl:hidden 2xl:hidden">
+         custom:space-y-10 lg:hidden custom2:space-y-10 custom3:space-y-10 xl:hidden 2xl:hidden
+         ">
         <div className="sm:flex sm:justify-center custom:flex 
         custom:justify-center custom2:flex custom2:justify-center 
         custom3:flex custom3:justify-center">
@@ -62,7 +62,7 @@ const Rust = () => {
 
       <div className="sm:hidden custom:w-12 flex-shrink-0 
       custom2:justify-center custom3:flex-col custom3:justify-center 
-      custom:w-full custom2:hidden custom3:hidden">
+      custom:w-full custom2:hidden custom3:hidden ">
           <img
             className="custom:hidden  custom3:justify-center custom3:ml-20 custom2:w-full custom2:ml-16 custom2:justify-center"
             onClick={() => {

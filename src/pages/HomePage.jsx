@@ -13,14 +13,14 @@ const HomePage = () => {
 
 
   return (
-    <div className="mt-32 ml-40 mb-10">
+    <div className="mt-32 ml-40 mb-10 sm:ml-10 sm:overflow-x-hidden">
       <Header />
       {/* */}
       <div className="flex flex-row custom:flex-col mt-20 
       custom:-ml-40 custom:justify-center custom2:flex-col custom2:-ml-40 custom2:justify-center
       custom3:flex-col custom3:-ml-40 custom3:justify-center custom3:mt-10 
       custom2:mt-10">
-        <div className="sm:-ml-16 mb-2 custom:flex custom:flex-row
+        <div className="sm:ml-5 mb-2 custom:flex custom:flex-row
         custom2:flex custom2:flex-row custom3:flex custom3:flex-row">
           <ul className="flex flex-col w-full h-full custom:h-12 custom:pt-2 custom:border custom:mr-7 custom:ml-7 custom:flex 
           custom:flex-row custom:space-x-24 custom:justify-center
@@ -71,10 +71,10 @@ const HomePage = () => {
         </div>
 
 
-        <div className="sm:ml-14 sm:w-10/12 ml-40 text-[#acaeb8] text-md w-6/12 custom:text-sm custom:mt-5 
+        <div className="sm:ml-14 sm:mr-2 sm:w-9/12 ml-40 text-[#acaeb8] text-md w-6/12 custom:text-sm custom:mt-5 
         custom:w-9/12 custom:ml-20 custom2:text-md custom2:mt-5 custom2:w-10/12 
         custom2:ml-10 custom3:mt-8 custom3:w-10/12 custom3:ml-8 custom3:mr-5
-        custom3:text-md">
+        custom3:text-md md:ml-32 mlg:w-8/12">
           Lorem ipsum dolor sit amet, consectetur <span className="text-[#22c55e]">adipiscing elit</span>.<br /><br />
           aliquet velit malesuada. Ut sit amet consectetur lacus. Integer luctus dui vitae quam ultrices, 
           <a href="https://example.com" className="text-[#22c55e]"> justo bibendum </a>
