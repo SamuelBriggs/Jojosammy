@@ -24,12 +24,17 @@ const Rust = () => {
     custom2:ml-7 custom2:mr-7 custom2:overflow-x-hidden
 
     custom3:flex custom3:flex-col custom3:justify-center
-    custom3:ml-4 custom3:mr-4 custom3:overflow-x-hidden">
+    custom3:ml-4 custom3:mr-4 custom3:overflow-x-hidden
+    
+    xl:overflow-x-hidden xl:w-7/12
+    
+    2xl:overflow-x-hidden 2xl:w-8/12">
 
         <div className="sm:ml-20 sm:space-y-10 md:hidden mlg:hidden 
-         custom:space-y-10 lg:hidden custom2:space-y-10 custom3:space-y-10">
+         custom:space-y-10 lg:hidden custom2:space-y-10 custom3:space-y-10 xl:hidden 2xl:hidden">
         <div className="sm:flex sm:justify-center custom:flex 
-        custom:justify-center custom2:flex custom2:justify-center custom3:flex custom3:justify-center">
+        custom:justify-center custom2:flex custom2:justify-center 
+        custom3:flex custom3:justify-center">
         <img
             className="
             custom2:w-full custom2:justify-center
@@ -74,7 +79,8 @@ const Rust = () => {
         
       </div>
 
-      <div className="md:hidden mlg:hidden lg:hidden custom:hidden custom3:-ml-5">
+      <div className="md:hidden mlg:hidden lg:hidden xl:hidden 2xl:hidden
+      custom:hidden custom3:-ml-5">
           <Links />
         </div>
 
@@ -96,7 +102,7 @@ const Rust = () => {
         custom:w-full custom:-ml-20 custom2:-ml-20 custom3:-ml-20">
           <div className="flex flex-row justify-between">
             <h3 className="md-header">Ghostty Devlog 006</h3>
-            <p className="italic text-[#acaeb8] ">March 2, 2024</p>
+            <p className="italic text-[#acaeb8] xl:mr-40 text-sm">March 2, 2024</p>
           </div>
           <br />
           <br />
@@ -110,7 +116,7 @@ const Rust = () => {
           </div>
 
           
-          <div className="border md-body bg-[#0e121a] p-5 lg:text-lg">
+          <div className="border md-body bg-[#0e121a] p-5 lg:text-lg xl:w-10/12">
             <p className="text-[#FF0800]">
             If you missed previous devlogs, or you want to learn more about what
             Ghostty is, please see the Ghostty page on this website.
@@ -150,7 +156,7 @@ const Rust = () => {
             naive, but typical approach is to read the bytes in a for loop:{" "}
             <br />
             <br />
-            <div className="border md-body body bg-[#0e121a] p-5 lg:text-lg">
+            <div className="border md-body body bg-[#0e121a] p-5 lg:text-lg xl:w-10/12">
               <p className="text-[#FF0800]">const bytes = read();</p>
             </div>
             <br />
@@ -181,7 +187,7 @@ const Rust = () => {
             <br />
           </p>
           
-          <div className="border md-body bg-[#0e121a] p-5 lg:text-lg">
+          <div className="border md-body bg-[#0e121a] p-5 lg:text-lg xl:w-10/12">
             <p className="text-[#FF0800]">const bytes = read()</p>
           </div>
           
@@ -226,7 +232,7 @@ const Rust = () => {
             <br />
             <br />
           </p>
-          <div className="border md-body bg-[#0e121a] p-5 lg:text-lg">
+          <div className="border md-body bg-[#0e121a] p-5 lg:text-lg xl:w-10/12">
             <p className="text-[#FF0800]">
               Benchmark 1: memcpy Time (mean ± σ): 52.7 ms ± 0.7 ms [User: 41.6
               ms, System: 47.6 ms] Range (min … max): 50.7 ms … 54.6 ms 53 runs{" "}
@@ -353,7 +359,7 @@ const Rust = () => {
           </div>
         </div>
 
-        <div className="mb-40 mlg:w-5/6 md:mr-8 lg:mr-20">
+        <div className="mb-40 mlg:w-5/6 md:mr-8 lg:mr-20 xl:mr-40">
           <BlogFooter />
         </div>
       </div>
