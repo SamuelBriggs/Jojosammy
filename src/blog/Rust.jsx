@@ -20,21 +20,22 @@ const Rust = () => {
     lg:overflow-x-hidden lg:ml-0
     custom:flex custom:flex-col custom:justify-center 
     custom:ml-10 custom:mr-10 custom:overflow-x-hidden
-    
     custom2:flex custom2:flex-col custom2:justify-center 
-    custom2:ml-10 custom2:mr-10 custom2:overflow-x-hidden
-    
-    custom3:flex custom3:flex-col custom3:justify-center 
-    custom3:ml-10 custom3:mr-10 custom3:overflow-x-hidden">
+    custom2:ml-7 custom2:mr-7 custom2:overflow-x-hidden
+
+    custom3:flex custom3:flex-col custom3:justify-center
+    custom3:ml-4 custom3:mr-4 custom3:overflow-x-hidden">
 
         <div className="sm:ml-20 sm:space-y-10 md:hidden mlg:hidden 
-         custom:space-y-10
-        custom3:hidden custom2:hidden lg:hidden">
-        <div className="sm:flex sm:justify-center custom:flex custom:justify-center">
+         custom:space-y-10 lg:hidden custom2:space-y-10 custom3:space-y-10">
+        <div className="sm:flex sm:justify-center custom:flex 
+        custom:justify-center custom2:flex custom2:justify-center custom3:flex custom3:justify-center">
         <img
-            className="custom3:justify-center custom3:ml-20 
-            custom2:w-full custom2:ml-16 custom2:justify-center
-            custom:flex custom:justify-center"
+            className="
+            custom2:w-full custom2:justify-center
+            custom:flex custom:justify-center
+            custom2:flex custom2:justify-center
+            custom3:flex custom3:justify-center"
             onClick={() => {
               window.location.href = "/";
             }}
@@ -45,7 +46,8 @@ const Rust = () => {
           </div>
 
         <div
-          className="header sm:flex sm:justify-center custom:flex custom:justify-center"
+          className="header sm:flex sm:justify-center custom:flex 
+          custom:justify-center custom2:flex custom2:justify-center custom3:flex custom3:justify-center"
           onClick={() => { window.location.href = "/"}}
           style={{ cursor: "pointer" }}>
           Samuel Alawode
@@ -55,9 +57,9 @@ const Rust = () => {
 
       <div className="sm:hidden custom:w-12 flex-shrink-0 
       custom2:justify-center custom3:flex-col custom3:justify-center 
-      custom:w-full ">
+      custom:w-full custom2:hidden custom3:hidden">
           <img
-            className="custom:hidden custom3:justify-center custom3:ml-20 custom2:w-full custom2:ml-16 custom2:justify-center"
+            className="custom:hidden  custom3:justify-center custom3:ml-20 custom2:w-full custom2:ml-16 custom2:justify-center"
             onClick={() => {
               window.location.href = "/";
             }}
@@ -72,14 +74,13 @@ const Rust = () => {
         
       </div>
 
-      <div className="md:hidden mlg:hidden lg:hidden custom:hidden">
+      <div className="md:hidden mlg:hidden lg:hidden custom:hidden custom3:-ml-5">
           <Links />
         </div>
-      
 
       <div className="h-full md:w-3/4 sm:mt-10 custom:w-full">
         <div
-          className="custom:hidden custom:ml-40 custom:w-52 text-white text-2xl font-bold name 
+          className="custom2:hidden custom3:hidden custom:hidden custom:ml-40 custom:w-52 text-white text-2xl font-bold name 
         custom2:justify-center custom2:mt-10 custom3:mt-8 sm:ml-20 sm:hidden"
           onClick={() => {
             window.location.href = "/";
@@ -92,7 +93,7 @@ const Rust = () => {
         <br />
         <br />
         <div className="w-90 md:w-11/12 sm:-mt-10 mlg:w-11/12 lg:mr-20
-        custom:w-full custom:-ml-20">
+        custom:w-full custom:-ml-20 custom2:-ml-20 custom3:-ml-20">
           <div className="flex flex-row justify-between">
             <h3 className="md-header">Ghostty Devlog 006</h3>
             <p className="italic text-[#acaeb8] ">March 2, 2024</p>
@@ -108,7 +109,6 @@ const Rust = () => {
           <Text1 />
           </div>
 
-          
           
           <div className="border md-body bg-[#0e121a] p-5 lg:text-lg">
             <p className="text-[#FF0800]">
