@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.20365f8c.css",
-    "main.js": "/static/js/main.cd74d427.js",
+    "main.css": "/static/css/main.d2dc1e55.css",
+    "main.js": "/static/js/main.8df03952.js",
     "static/media/Vid1.mp4": "/static/media/Vid1.635a0fece0c93da9a752.mp4",
     "static/media/BadBoysII.jpeg": "/static/media/BadBoysII.2146ee3f1fa86b132c50.jpeg",
     "static/media/NimbusSanL-RegIta.woff": "/static/media/NimbusSanL-RegIta.c422ecee4ff5843f50b8.woff",
@@ -11,11 +11,11 @@
     "static/media/Code1.JPG": "/static/media/Code1.1fcb271ca2064ccb280b.JPG",
     "static/media/Logo.svg": "/static/media/Logo.68327ec59143703481752710afb4bf96.svg",
     "index.html": "/index.html",
-    "main.20365f8c.css.map": "/static/css/main.20365f8c.css.map",
-    "main.cd74d427.js.map": "/static/js/main.cd74d427.js.map"
+    "main.d2dc1e55.css.map": "/static/css/main.d2dc1e55.css.map",
+    "main.8df03952.js.map": "/static/js/main.8df03952.js.map"
   },
   "entrypoints": [
-    "static/css/main.20365f8c.css",
-    "static/js/main.cd74d427.js"
+    "static/css/main.d2dc1e55.css",
+    "static/js/main.8df03952.js"
   ]
 }
