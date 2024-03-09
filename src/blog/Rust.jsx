@@ -99,21 +99,35 @@ const Rust = () => {
         <br />
         <br />
         <div className="w-90 md:w-11/12 sm:-mt-10 mlg:w-11/12 lg:mr-20
-        custom:w-full custom:-ml-20 custom2:-ml-20 custom3:-ml-20">
+        custom:w-full custom:-ml-20 custom2:-ml-20 custom3:-ml-20
+        lg:w-10/12 xl:w-11/12 2xl:w-11/12">
+
+
+          {/* This is the post title and date, date was hardcoded here*/}          
           <div className="flex flex-row justify-between">
             <h3 className="md-header">Ghostty Devlog 006</h3>
             <p className="italic text-[#acaeb8] xl:mr-40 text-sm">March 2, 2024</p>
           </div>
           <br />
           <br />
+
+
+
+          {/* This will be the header of your post, you can always ask ChatGPT 
+          to give you emoji if your system doesn't have one */}
           <p className="md-body lg:text-lg">
             Hello! Welcome to the official devlog for Ghostty 👻!
           </p>
           <br />
 
+
+
+          {/* This is the first paragraph or body */}
           <div className="mlg:w-full">
           <Text1 />
           </div>
+
+
 
           
           <div className="border md-body bg-[#0e121a] p-5 lg:text-lg xl:w-10/12">
@@ -123,15 +137,20 @@ const Rust = () => {
           </p>
           </div>
 
+
+
           <br />
           <br />
-          {/* This is the line code, if you ever need it */}
+          {/* This is the underline code, if you ever need it */}
           <div
             className="border-b border-[#808080]"
             style={{ width: "90%" }}
           />{" "}
           <br />
           <br />
+
+
+
           <p className="md-body lg:text-lg">
             Improving Plain Text Throughput with SIMD (#1472) <br />
             <br />
