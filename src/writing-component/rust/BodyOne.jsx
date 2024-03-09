@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Text1 = () => {
+const BodyOne = () => {
   return (
     <div>
         <p className="md-body w-full lg:text-lg">
@@ -31,4 +31,4 @@ const Text1 = () => {
   )
 }
 
-export default Text1
+export default BodyOne

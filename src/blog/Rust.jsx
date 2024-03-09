@@ -5,7 +5,7 @@ import Logo from "../images/svg/Logo.svg";
 import VideoPlayer from "../video/VideoPlayer";
 import "../styles/Rust.css";
 import Links from "../pages/Links";
-import PostBody from "../writing-component/RustBody";
+import BodyOne from "../writing-component/rust/BodyOne";
 
 
 const Rust = () => {
@@ -122,7 +122,7 @@ const Rust = () => {
 
           {/* This is the post/blog body */}
           <div className="mlg:w-full">
-          <PostBody />
+          <BodyOne />
           </div>
 
 
@@ -154,7 +154,7 @@ const Rust = () => {
           
           {/* This is the post body */}
           <div className="mlg:w-full">
-          <PostBody />
+          <BodyOne />
           </div>
 
 
@@ -193,7 +193,7 @@ const Rust = () => {
 
           {/* This is the Post Body  */}
           <div>
-            <PostBody />
+            <BodyOne />
           </div>
 
 
@@ -210,7 +210,7 @@ const Rust = () => {
 
           {/* This is the Post Body  */}
           <div>
-            <PostBody />
+            <BodyOne />
           </div>
           <br />
 
